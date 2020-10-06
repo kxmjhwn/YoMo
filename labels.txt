@@ -1,0 +1,4 @@
+cigarette
+knife
+carnum
+addr
