@@ -1,14 +1,29 @@
 # YoMo
-2020 졸업프로젝트 / 모자이크해조  
-YOLOv2(darkflow)를 활용한 영상 속 유해, 개인정보 이미지 탐지 및 모자이크 처리 서비스 
-<br>
-<br>
-# 설명
-* darkflow 설치 및 초기 설정 과정(CUDA, cudnn설치 등)이 필요합니다. (https://github.com/thtrieu/darkflow)
-* 가중치 파일과 학습에 사용한 이미지 데이터는 업로드를 생략했습니다.
-1. cfg : 모델 세부 설정 파일들입니다.
-2. training : 학습진행 및 테스트 코드들입니다.  
-"_addr", "_carnumber(carnum)", "_knife", "_cigarette" 은 각각 도로명주소, 차 번호판, 칼, 담배에 대한 단일 탐지 파일,  
-"_demon"은 4개의 항목에 대한 다중 탐지 파일
-3. server : 웹페이지 및 서버(localhost) 구현 파일들입니다.
-4. yomo.py : 서버와 연동되어 학습된 모델을 통해 탐지 및 모자이크 처리를 진행하는 코드입니다.
+
+#### **"YoMo"는 인공지능 기반 실시간 객체 탐지 알고리즘인 "YOLO"와 프로젝트의 주제인 "Mosaic"의 합성어로, 동영상 속 유해 이미지 또는 개인정보 이미지를 자동으로 탐지하여 이를 모자이크 처리하는 시스템"**
+
+* 기간 : 2020.03 ~ 2020.012
+
+* 특이사항
+
+  * YOLO, Darkflow, CUDA, cudnn, JavaScript, HTML, CSS 사용
+  
+  * 가중치 파일과 학습에 사용한 image dataset은 upload 생략
+  
+  * 파일 설명
+  
+    * cfg : 모델 세부 설정 파일
+    
+    * training : 학습 진행 및 테스트 코드
+    
+    * [_addr], [_carnumber], [_knife], [_cigarette] : 도로명 주소, 차 번호판, 칼, 담배에 대한 단일 탐지 파일
+    
+    * [_demon] : 위 4개 항목에 대한 다중 탐지 파일
+    
+    * server : 웹 페이지 및 서버(localhost) 구현 파일
+    
+    * yomo.py : 서버와 연동되어 학습된 모델을 통해, 탐지 및 모자이크 처리를 진행하는 코드
+    
+  * 2020 캡스톤 디자인에 참가하여 우수상을 수상함
+  
+  * 최종 보고서 링크 : https://kxmjhwn.tistory.com/219?category=1121129
